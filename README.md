@@ -7,5 +7,5 @@ Pasos para Completar la tarea:
 - Pushear el commit
 - Crear un archivo html
 - Pushear el html
-- Cambiar el contenido del Readme
-- Pushear el cambio.
+- Actualizar el contenido del Readme
+- Pushear la actualización.
