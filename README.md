@@ -6,4 +6,6 @@ Pasos para Completar la tarea:
 - Commitear el archivo
 - Pushear el commit
 - Crear un archivo html
+- Pushear el html
 - Cambiar el contenido del Readme
+- Pushear el cambio.
