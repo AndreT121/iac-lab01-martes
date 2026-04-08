@@ -1,11 +1,12 @@
 # iac-lab01-martes
 
-Pasos para Completar la tarea:
+Tenemos código de una aplicación web. Se compone por un archivo HTML que tiene como contenido: WEB01
 
-- Completar el Readme.md
-- Commitear el archivo
-- Pushear el commit
-- Crear un archivo html
-- Pushear el html
-- Actualizar el contenido del Readme
-- Pushear la actualización.
+Quiero poder publicar esta web, especificamente una sola copia como primera instancia
+
+TAREA:
+
+Desplegar dos web, mostrar Web01, y Web02 como contenido
+Los puertos deben estar configurados en 4000 y 4001
+Gestionar carpetas para orden
+Hacer uso de Gitflow/Conventional Commits
