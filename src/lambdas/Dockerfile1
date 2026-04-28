@@ -1,0 +1,13 @@
+FROM amazoncorretto:11-alpine-jdk
+RUN mkdir -p /opt
+COPY com /opt/com
+WORKDIR /opt
+
+# Descarga la dependencia y compila
+RUN wget https://repo1.maven.org/maven2/com/amazonaws/aws-lambda-java-core/1.2.3/aws-lambda-java-core-1.2.3.jar -O /opt/aws-lambda-java-core.jar
+RUN javac -cp /opt/aws-lambda-java-core.jar com/example/lambda/Handler1.java
+RUN jar cvf lambda1.jar com/example/lambda/Handler1.class
+
+FROM amazon/aws-lambda-java:11
+COPY --from=0 /opt/lambda1.jar ${LAMBDA_TASK_ROOT}/lib/
+CMD ["com.example.lambda.Handler1::handleRequest"]
